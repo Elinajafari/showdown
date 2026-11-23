@@ -1,0 +1,19 @@
+{
+  "name": "showdown",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Showdown: see README.md",
+  "type": "module",
+  "license": "MIT",
+  "author": "Elina (https://github.com/Elinajafari)",
+  "repository": { "type": "git", "url": "https://github.com/Elinajafari/showdown" },
+  "scripts": {
+    "test": "pnpm --filter @showdown/contracts test",
+    "lint:genvm": "node packages/contracts/scripts/lint.mjs",
+    "deploy:contract": "node packages/contracts/scripts/deploy.mjs",
+    "demo:contract": "node packages/contracts/scripts/demo.mjs",
+    "verify:contract": "node packages/contracts/scripts/verify.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "packageManager": "pnpm@10.18.2"
+}

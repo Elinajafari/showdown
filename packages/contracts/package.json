@@ -1,0 +1,13 @@
+{
+  "name": "@showdown/contracts",
+  "displayName": "Showdown",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "license": "MIT",
+  "author": "Elina (https://github.com/Elinajafari)",
+  "scripts": { "test": "python -m pytest tests -q -p no:cacheprovider", "mutate": "python scripts/mutate.py", "lint": "node scripts/lint.mjs", "deploy": "node scripts/deploy.mjs", "demo": "node scripts/demo.mjs", "verify": "node scripts/verify.mjs" },
+  "dependencies": {
+    "genlayer-js": "2.0.0-rc.3"
+  }
+}
