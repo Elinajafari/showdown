@@ -10,13 +10,15 @@
 
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import { CONTRACT_FILE, EXPLORER, RECORD_FILE, accountFrom, clientFor, loadEnv, network, recorder, sourceSha256 } from "./lib.mjs";
+import { CONTRACT_FILE, EXPLORER, RECORD_FILE, accountFrom, clientFor, fundAccount, loadEnv, network, recorder, sourceSha256 } from "./lib.mjs";
 
 loadEnv();
 const net = network();
 const deployer = accountFrom("DEPLOYER_PRIVATE_KEY", net);
 const client = clientFor(net, deployer);
 const code = readFileSync(CONTRACT_FILE, "utf8");
+// StudioNet charges a fee on every deploy and write, so the deployer is funded from its faucet first.
+if (net.name === "studionet") await fundAccount(net, clientFor(net, null), deployer.address, 10n ** 18n);
 
 console.log(`\ndeploying ${path.basename(CONTRACT_FILE)} to ${net.name} from ${deployer.address}`);
 const rec = recorder();

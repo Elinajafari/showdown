@@ -1,0 +1,246 @@
+{
+  "network": "studionet",
+  "chain_id": 61999,
+  "contract": "0x1F26056DDd9a228d74DAEEDC06cA59EE9524f80b",
+  "explorer": "https://explorer-studio.genlayer.com/address/0x1F26056DDd9a228d74DAEEDC06cA59EE9524f80b",
+  "source_sha256": "8ccb37914a992ae3ac39aedf7189eab7cf2cdfab0554b2fd4dba20756b58afdd",
+  "constructor": {},
+  "deployer": "0x14ff7Ca7536FcC6E8431FbB6D334919955ef68B1",
+  "steps": [
+    {
+      "step": "deploy",
+      "method": "deploy",
+      "from": "0x14ff7Ca7536FcC6E8431FbB6D334919955ef68B1",
+      "tx": "0xd264e1de33b8255ae75dd64540d57a94f6601e556a79979ec72fcb13e904a8cf",
+      "status": "ACCEPTED",
+      "ok": true,
+      "refusal": "",
+      "address": "0x1F26056DDd9a228d74DAEEDC06cA59EE9524f80b"
+    },
+    {
+      "step": "showdown 0 opened: the pro side stakes 0.05 GEN and names dated release notes",
+      "method": "open",
+      "from": "0x9474c25E0A09e583DF2ED240243B7C1D7b5AfaAe",
+      "tx": "0xbde2127c37d4143f78c2c731958017a072f3b5384b55bad9ab052269467fb2a7",
+      "status": "ACCEPTED",
+      "ok": true,
+      "refusal": ""
+    },
+    {
+      "step": "the opener takes the other side of its own showdown: refused",
+      "method": "accept",
+      "from": "0x9474c25E0A09e583DF2ED240243B7C1D7b5AfaAe",
+      "tx": "0x0bb1c7b45181dba0db8dbfa734bb3303a07c4302cb446056727dda19952e812f",
+      "status": "ACCEPTED",
+      "ok": false,
+      "refusal": "[EXPECTED] the opener cannot take the other side of its own showdown"
+    },
+    {
+      "step": "a judgment before the other side is in: refused",
+      "method": "judge",
+      "from": "0xea980f4A49d6c2d22f9EFb71B93f85eeFa8Ec308",
+      "tx": "0xe8446f419da1aab9b2e16edd65faeaefad863aab925a63370dd24ba21145c2c9",
+      "status": "ACCEPTED",
+      "ok": false,
+      "refusal": "[EXPECTED] this showdown is open; only one with both sides in is judged"
+    },
+    {
+      "step": "the other side names the opener's own page: refused",
+      "method": "accept",
+      "from": "0xC922f3CAb92B424959aa438e669e613Fc4BdD4e2",
+      "tx": "0x6317b83c2a58f1f9fcc42925c9816f1cb4fe133224b5bb54a6f9ebd7edc24d2d",
+      "status": "ACCEPTED",
+      "ok": false,
+      "refusal": "[EXPECTED] both sides cannot name the same evidence page"
+    },
+    {
+      "step": "showdown 0: the other side matches the stake and names a vague post",
+      "method": "accept",
+      "from": "0xC922f3CAb92B424959aa438e669e613Fc4BdD4e2",
+      "tx": "0xf34f186e58fb50a029379b68e6640e818ff261e7aaf1b72fe37d570d4882c4ea",
+      "status": "ACCEPTED",
+      "ok": true,
+      "refusal": ""
+    },
+    {
+      "step": "showdown 0 judged: both pages fetched and weighed, both orders",
+      "method": "judge",
+      "from": "0xea980f4A49d6c2d22f9EFb71B93f85eeFa8Ec308",
+      "tx": "0xc12c05798db778f47e7f6107e30d5fbed0691a9c33c68dad65d266f05e84e2a6",
+      "status": "ACCEPTED",
+      "ok": true,
+      "refusal": ""
+    },
+    {
+      "step": "a second judgment on a decided showdown: refused",
+      "method": "judge",
+      "from": "0xea980f4A49d6c2d22f9EFb71B93f85eeFa8Ec308",
+      "tx": "0x6dd1ad2a629a266bb76c92d6d7304ca57d11b3279b10e80c0eb21ae3aaf4a835",
+      "status": "ACCEPTED",
+      "ok": false,
+      "refusal": "[EXPECTED] this showdown is decided; only one with both sides in is judged"
+    },
+    {
+      "step": "showdown 1 opened: a festival date, one anecdote on each side",
+      "method": "open",
+      "from": "0x9474c25E0A09e583DF2ED240243B7C1D7b5AfaAe",
+      "tx": "0xd2e13c1e550173e0b26501224cddc3590cf8d966c346e2ca0393a8dc2f417bb8",
+      "status": "ACCEPTED",
+      "ok": true,
+      "refusal": ""
+    },
+    {
+      "step": "showdown 1: the other side matches the stake with the opposite anecdote",
+      "method": "accept",
+      "from": "0xC922f3CAb92B424959aa438e669e613Fc4BdD4e2",
+      "tx": "0x538e8c5513138fbd37e503a53dc9376df3e53d627844e59bc97fc59f3c27bbb1",
+      "status": "ACCEPTED",
+      "ok": true,
+      "refusal": ""
+    },
+    {
+      "step": "showdown 1 judged: two thin anecdotes, neither stronger",
+      "method": "judge",
+      "from": "0xea980f4A49d6c2d22f9EFb71B93f85eeFa8Ec308",
+      "tx": "0x37232af8dbebf9625ecb4724fc33f829a2bcf68882916329e5190ccfe0c26da9",
+      "status": "ACCEPTED",
+      "ok": true,
+      "refusal": ""
+    },
+    {
+      "step": "showdown 2 opened: nobody will take the other side",
+      "method": "open",
+      "from": "0x9474c25E0A09e583DF2ED240243B7C1D7b5AfaAe",
+      "tx": "0x3572a38197e3fcb0ca7c280917bba53b08ffcf7f88361eab5b96b43ea5b3ea94",
+      "status": "ACCEPTED",
+      "ok": true,
+      "refusal": ""
+    },
+    {
+      "step": "a refund while the other side can still come: refused",
+      "method": "settle",
+      "from": "0xea980f4A49d6c2d22f9EFb71B93f85eeFa8Ec308",
+      "tx": "0x94d17cb594634b8f96801f971b3082629d94397559f174c4e945de6f78d2e788",
+      "status": "ACCEPTED",
+      "ok": false,
+      "refusal": "[EXPECTED] the other side is open until 2026-11-23T22:34:58Z"
+    },
+    {
+      "step": "showdown 2 settled: nobody came, the opener's stake comes back",
+      "method": "settle",
+      "from": "0xea980f4A49d6c2d22f9EFb71B93f85eeFa8Ec308",
+      "tx": "0xebdd54f0cd39176f79002b1d29e85d0a301286b02986079ad7717f65ced23a28",
+      "status": "ACCEPTED",
+      "ok": true,
+      "refusal": ""
+    }
+  ],
+  "demo": {
+    "pages": {
+      "strong_pro": "https://raw.githubusercontent.com/Elinajafari/showdown/main/demo/strong_pro.md",
+      "weak_con": "https://raw.githubusercontent.com/Elinajafari/showdown/main/demo/weak_con.md",
+      "vague_a": "https://raw.githubusercontent.com/Elinajafari/showdown/main/demo/vague_a.md",
+      "vague_b": "https://raw.githubusercontent.com/Elinajafari/showdown/main/demo/vague_b.md"
+    },
+    "stake_wei": "50000000000000000",
+    "matches": [
+      {
+        "con": "0xC922f3CAb92B424959aa438e669e613Fc4BdD4e2",
+        "con_url": "https://raw.githubusercontent.com/Elinajafari/showdown/main/demo/weak_con.md",
+        "join_by": "2026-11-23T22:47:26Z",
+        "joined_at": "2026-11-23T22:28:30Z",
+        "judge_by": "2026-11-23T22:48:30Z",
+        "opened_at": "2026-11-23T22:27:26Z",
+        "paid_con": "0",
+        "paid_pro": "100000000000000000",
+        "pro": "0x9474c25E0A09e583DF2ED240243B7C1D7b5AfaAe",
+        "pro_url": "https://raw.githubusercontent.com/Elinajafari/showdown/main/demo/strong_pro.md",
+        "proposition": "The Aurelia library version 2.0 was released in 2019.",
+        "reason_is_leader_supplied": true,
+        "settled_at": "2026-11-23T22:28:44Z",
+        "stake": "50000000000000000",
+        "status": "decided",
+        "verdict": "pro",
+        "why": "Page one gives a specific release date, version tag, and corroborating release details; page two relies only on vague, unnamed forum posts a"
+      },
+      {
+        "con": "0xC922f3CAb92B424959aa438e669e613Fc4BdD4e2",
+        "con_url": "https://raw.githubusercontent.com/Elinajafari/showdown/main/demo/vague_b.md",
+        "join_by": "2026-11-23T22:49:26Z",
+        "joined_at": "2026-11-23T22:29:40Z",
+        "judge_by": "2026-11-23T22:49:40Z",
+        "opened_at": "2026-11-23T22:29:26Z",
+        "paid_con": "50000000000000000",
+        "paid_pro": "50000000000000000",
+        "pro": "0x9474c25E0A09e583DF2ED240243B7C1D7b5AfaAe",
+        "pro_url": "https://raw.githubusercontent.com/Elinajafari/showdown/main/demo/vague_a.md",
+        "proposition": "The Harbour Festival was moved from May to June this year.",
+        "reason_is_leader_supplied": true,
+        "settled_at": "2026-11-23T22:30:03Z",
+        "stake": "50000000000000000",
+        "status": "decided",
+        "verdict": "neither",
+        "why": "Both pages make vague, unverified hearsay claims and openly express uncertainty, so neither provides stronger support for its side."
+      },
+      {
+        "con": "",
+        "con_url": "",
+        "join_by": "2026-11-23T22:34:58Z",
+        "joined_at": "",
+        "judge_by": "",
+        "opened_at": "2026-11-23T22:30:58Z",
+        "paid_con": "0",
+        "paid_pro": "50000000000000000",
+        "pro": "0x9474c25E0A09e583DF2ED240243B7C1D7b5AfaAe",
+        "pro_url": "https://raw.githubusercontent.com/Elinajafari/showdown/main/demo/strong_pro.md",
+        "proposition": "The Aurelia library version 2.0 was released in 2019.",
+        "reason_is_leader_supplied": true,
+        "settled_at": "2026-11-23T22:35:14Z",
+        "stake": "50000000000000000",
+        "status": "cancelled",
+        "verdict": "",
+        "why": ""
+      }
+    ],
+    "owed": {
+      "pro": "200000000000000000",
+      "con": "50000000000000000"
+    },
+    "received": {
+      "pro": "200000000000000000",
+      "con": "50000000000000000"
+    },
+    "payouts": {
+      "pro": [
+        {
+          "tx": "0x139692618d7c85127e920506369f5b7116a725a8e65e8f55dfac07f8ec07e8c6",
+          "value": "100000000000000000",
+          "created_at": "2026-11-23T22:29:31.978794+00:00"
+        },
+        {
+          "tx": "0x47cb8f1531f71ce70c49b9d6314f29506275f6e5b97d87e1450fd4bb53ad9b48",
+          "value": "50000000000000000",
+          "created_at": "2026-11-23T22:31:08.328817+00:00"
+        },
+        {
+          "tx": "0x01aaba48e8b0718998d74cbc2a7f79f71994ea047751b733103fb34f9d767da5",
+          "value": "50000000000000000",
+          "created_at": "2026-11-23T22:35:49.944428+00:00"
+        }
+      ],
+      "con": [
+        {
+          "tx": "0xf0cde65d55ed46b36d9cc81ba1ae4c816859ced84af421dd2d4b1412dc2f9669",
+          "value": "50000000000000000",
+          "created_at": "2026-11-23T22:31:08.328817+00:00"
+        }
+      ]
+    },
+    "held_after": "0",
+    "accounts": {
+      "pro": "0x9474c25E0A09e583DF2ED240243B7C1D7b5AfaAe",
+      "con": "0xC922f3CAb92B424959aa438e669e613Fc4BdD4e2",
+      "stranger": "0xea980f4A49d6c2d22f9EFb71B93f85eeFa8Ec308"
+    }
+  }
+}
